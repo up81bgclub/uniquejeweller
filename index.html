@@ -1,11 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unique Jeweller</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique Jeweller</title>
+  <!-- bootstrap css  -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Font Awesome CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custome CSS  -->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Google Font  -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:wght@400;500&display=swap"
+    rel="stylesheet">
+
 </head>
+
 <body>
-    
+  <!-- Navbar  -->
+  <nav class="navbar navbar-expand-lg fixed-top menu">
+    <div class="container">
+      <!-- logo -->
+      <a class="navbar-brand logo" href="#">Unique Jeweller</a>
+      <!-- toggle button -->
+      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- sidebar  -->
+      <div class="offcanvas sidebar offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <!-- sidebar header  -->
+        <div class="offcanvas-header text-dark border-bottom">
+          <h5 class="offcanvas-title logo" id="offcanvasNavbarLabel">Unique Jeweller</h5>
+          <button type="button" class="btn-close golden" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!-- sidebar body  -->
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">About US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">Customer Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">Customer Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center justify-content-center">
+            <button class="btn golden" type="submit">
+              <i class="fa-solid fa-phone"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+  <!-- Hero Section  -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="hero-content">
+            <h1 class="display-4 mb-3 golden">
+              Unique Jeweller
+            </h1>
+
+            <p class="lead mb-4">
+              Premium Gold & Diamond Jewellery in Aligarh
+            </p>
+
+            <a href="#" class="btn btn-golden me-3">View Collections</a>
+            <a href="#" class="btn btn-outline-golden">Visit Our Store</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section End  -->
+  <!-- Key Hilight Strip  -->
+  <div class="key-hilight">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="key-hilight-item d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-check golden"></i>
+            <h6>100% Hallmarked Gold</h6>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="key-hilight-item d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-check golden"></i>
+            <h6>Custom Design Available</h6>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="key-hilight-item d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-check golden"></i>
+            <h6>Easy Exchange & Buyback</h6>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="key-hilight-item d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-check golden"></i>
+            <h6>Trusted Since 2004</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- key Hilight Strip End -->
+  <!-- Our Collections -->
+  <section class="our-collections py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 p-4 ">
+          <h2 class="text-center text-uppercase py-4">Our Collections</h2>
+        </div>
+      </div>
+      <div class="row card-section">
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="./images/bridal-coll.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bridal Jewellery</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+              <a href="#" class="btn btn-dark-golden">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="/images/daily-coll.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Daily Wear</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+              <a href="#" class="btn btn-dark-golden">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="/images/diamond-coll.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Diamond Jewellery</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+              <a href="#" class="btn btn-dark-golden">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="/images/custome-coll.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Custome Design</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+              <a href="#" class="btn btn-dark-golden">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Our Collections End -->
+  <!-- why choose us -->
+  <section class="why-choose-us">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-lg-6 mt-5">
+          <h2 class="text-uppercase">Why unique jeweller?</h2>
+          <div class="row">
+            <div class="col-6">
+              <div class="why-choose-us-item d-flex align-items-center py-4">
+                <i class="fa-solid fa-check golden mx-3"></i>
+                <h6>20+ Years Of Trust</h6>
+              </div>
+              <div class="why-choose-us-item d-flex align-items-center py-2">
+                <i class="fa-solid fa-check golden mx-3"></i>
+                <h6>Transparent Pricing</h6>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="why-choose-us-item d-flex align-items-center py-4">
+                <i class="fa-solid fa-check golden mx-3"></i>
+                <h6>In-house Designer</h6>
+              </div>
+              <div class="why-choose-us-item d-flex align-items-center py-2">
+                <i class="fa-solid fa-check golden mx-3"></i>
+                <h6>Certified Diamonds</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="/images/firm.png" class="img-fluid rounded" style="width:100%; max-height:250px;" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- why choose us end -->
+  <!-- Visit Our Customer Say -->
+
+  <section class="customer-say">
+    <div class="container">
+      <h2 class="text-uppercase text-center py-4">Visit Our Customers Say</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="bg-light p-5">
+            <div class="d-flex justify-content-start align-items-center mb-3">
+              <img src="/images/g1.jpg" style="width: 70px; height: 70px;" class="rounded-circle" alt="">
+              <div class="mx-5">
+                <h6>Alina Haider</h6>
+                <div class="d-flex">
+                  <i class="fa-solid fa-star golden"></i>
+                  <i class="fa-solid fa-star golden"></i>
+                  <i class="fa-solid fa-star golden"></i>
+                  <i class="fa-solid fa-star golden"></i>
+                  <i class="fa-solid fa-star golden"></i>
+                </div>
+              </div>
+            </div>
+            <p>"Some quick example text to build on the card title and make up the bulk"</p>
+            <p>From Google Reviews</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="bg-light p-5">
+            <div class="d-flex justify-content-start align-items-center mb-3">
+              <img src="/images/g2.jpg" style="width: 70px; height: 70px;" class="rounded-circle" alt="">
+              <div class="mx-5">
+                <h6>Alina Haider</h6>
+                <div class="d-flex">
+                  <i class="fa-solid fa-star golden"></i>
+                  <i class="fa-solid fa-star golden"></i>
+                  <i class="fa-solid fa-star golden"></i>
+                  <i class="fa-solid fa-star golden"></i>
+                  <i class="fa-solid fa-star golden"></i>
+                </div>
+              </div>
+            </div>
+            <p>"Some quick example text to build on the card title and make up the bulk"</p>
+            <p>From Google Reviews</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="bg-light p-5">
+            <div class="d-flex justify-content-start align-items-center mb-3">
+              <img src="/images/g3.jpg" style="width: 70px; height: 70px;" class="rounded-circle" alt="">
+              <div class="mx-5">
+                <h6>Alina Haider</h6>
+                <div class="d-flex">
+                  <i class="fa-solid fa-star golden"></i>
+                  <i class="fa-solid fa-star golden"></i>
+                  <i class="fa-solid fa-star golden"></i>
+                  <i class="fa-solid fa-star golden"></i>
+                  <i class="fa-solid fa-star golden"></i>
+                </div>
+              </div>
+            </div>
+            <p>"Some quick example text to build on the card title and make up the bulk"</p>
+            <p>From Google Reviews</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit Our Customer Say end -->
+   <!-- footer  -->
+   <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-item">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-item">
+            <h4>Other Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-item">
+            <h4>Other Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer end -->
+
+
+  <script src="/js/bootstrap.min.js"></script>
 </body>
+
 </html>

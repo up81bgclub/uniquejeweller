@@ -1,0 +1,205 @@
+/* ===================== */
+/* COMMOM CSS */
+
+:root {
+  --main-color: #d4af37;
+  --secondary-color: #FAF7F2;
+  --third-color: #FAF7F2;
+  --fourth-color: #FFF5EE;
+  --fifth-color: #D3D3D3;
+  --sixth-color: #ffffff;
+}
+
+body {
+  font-family: 'Lora', serif;
+  background-color: #ffffff;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.btn:focus,
+button:focus {
+  outline: none;
+}
+
+.menu {
+  list-style: none;
+  background-color: var(--sixth-color);
+  color: var();
+}
+
+.menu .logo {
+  color: var(--main-color);
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.menu li a:hover {
+  color: var(--main-color);
+}
+
+
+.golden {
+  color: #c9a24d;
+  border-color: #c9a24d;
+}
+
+.btn-golden {
+  background: linear-gradient(135deg, #c9a24d, #e6c36a);
+  color: #fff;
+  padding: 10px 28px;
+  border-radius: 30px;
+  border: none;
+}
+
+.btn-golden:hover {
+  background: linear-gradient(135deg, #b8923e, #d4b25f);
+  color: #fff;
+}
+
+.btn-outline-golden {
+  border: 2px solid #c9a24d;
+  color: #c9a24d;
+  padding: 10px 26px;
+  border-radius: 30px;
+}
+
+.btn-outline-golden:hover {
+  background: #c9a24d;
+  color: #fff;
+}
+
+.btn-dark-golden {
+  background: #966919;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+}
+.btn-dark-golden:hover {
+  background: #d4b25f;
+  color: #fff;
+}
+
+@media(max-width: 991px) {
+  .menu {
+    padding: 1px;
+  }
+
+  .sidebar {
+    background-color: rgba(250, 247, 242, 0.808);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+/* hero section  */
+.hero {
+  margin-top: 78px;
+  /* fixed navbar space */
+  background-image: url("../images/hero-banner.png");
+  background-size: cover;
+  background-position: center right;
+  /* model right side */
+  background-repeat: no-repeat;
+  height: 80vh;
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  background: rgba(255, 255, 255, 0.75);
+  /* luxury glass effect */
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 520px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 0;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  }
+
+  .hero-content {
+    background: rgba(255, 255, 255, 0.89);
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+
+  .btn-golden {
+    padding: 8px 20px;
+  }
+
+  .btn-outline-golden {
+    padding: 8px 20px;
+  }
+
+}
+
+/* hero section end  */
+.key-hilight {
+  background-color: var(--third-color);
+}
+
+.key-hilight-item {
+  padding: 12px 0;
+  margin: 8px 0;
+}
+
+.key-hilight-item h6 {
+  margin-left: 12px;
+}
+
+/* Our Collections  */
+.our-collections {
+  background: #FAF7F2;
+  background: linear-gradient(0deg, rgba(250, 247, 242, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+}
+
+.our-collections .card {
+  border-radius: 16px 16px 0px 0px;
+  overflow: hidden;
+  border: none;
+}
+.our-collections .card img {
+  border-radius: 16px 16px 0px 0px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.our-collections .card .btn {
+  background-color: #966919;
+}
+
+/* Our Collections End  */
+.customer-say{
+  background: #FAF7F2;
+}
+
+/* footer  */
+.footer{
+  background-color: #1F1818;
+  color: #fff;
+}
