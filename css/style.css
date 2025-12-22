@@ -285,13 +285,22 @@ background: linear-gradient(155deg, rgba(41, 38, 35, 1) 0%, rgba(48, 44, 40, 1) 
   text-align: center;
   font-family: "Crimson Text", serif;
 }
-.golden-line{
-  width: 50px;
+.golden-dark-line{
+  width: 70px;
   height: 2px;
   position: relative;
   bottom: 6px;
   background: #302c28;
-background: linear-gradient(112deg, rgba(48, 44, 40, 1) 0%, rgba(253, 199, 69, 1) 39%, rgba(48, 44, 40, 1) 100%);
+  background: linear-gradient(112deg, rgba(48, 44, 40, 1) 0%, rgba(253, 199, 69, 1) 39%, rgba(48, 44, 40, 1) 100%);
+  display: inline-block;
+}
+.golden-light-line{
+  width: 70px;
+  height: 2px;
+  position: relative;
+  bottom: 6px;
+  background: #302c28;
+  background: linear-gradient(112deg, rgb(250, 247, 242) 0%, rgba(253, 199, 69, 1) 39%, rgb(250, 247, 242) 100%);
   display: inline-block;
 }
 .our-collections p {
@@ -442,9 +451,89 @@ background: linear-gradient(112deg, rgba(48, 44, 40, 1) 0%, rgba(253, 199, 69, 1
 /* filter: drop-shadow(10px 15px 15px gray); */
 /* why choose us End */
 .customer-say {
-  background: #FAF7F2;
+  background: #f8f7f7;
+  overflow: hidden;
 }
 
+.customer-say h1 {
+  font-size: 3.7rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+  font-family: "Crimson Text", serif;
+}
+
+.customer-say .para {
+  color: var(--vlight-dark-color);
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 35px;
+}
+
+.customer-say .customer-say-item {
+  padding: 15px 30px;
+  margin: 10px 2px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 5px 10px 35px #e4e2e298;
+}
+
+.customer-say .customer-say-item .stars{
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.customer-say .customer-say-item p{
+  font-size: 16px;
+  color: var(--vlight-dark-color);
+  font-family: "Roboto", sans-serif;
+  height: 120px;
+}
+
+.customer-say .customer-say-item .c-box{
+  border-top: 1px solid lightgray;
+  padding-top: 15px;
+}
+.customer-say .customer-say-item span {
+  display: inline-block;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 50%;
+  border: 0;
+  background-color: #FFF7E6;
+  color: var(--fourth-color);
+}
+
+.customer-say .customer-say-item h6{
+  line-height: 7px;
+  margin-top: 6px;
+}
+.customer-say .customer-say-item small {
+  color: var(--vlight-dark-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+.customer-say .google-box{
+  padding: 10px 20px;
+  margin: 30px 0;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 5px 10px 35px #e4e2e298;
+}
+
+.customer-say .google-box h6 small{
+  color: var(--vlight-dark-color);
+  margin-right: 10px;
+}
+.customer-say .google-box h6{
+  font-family: "Roboto", sans-serif;
+  margin-top: 4px;
+}
+.customer-say .google-box h6 span{
+  margin-left: 10px;
+}
 /* footer  */
 .footer {
   background-color: #1F1818;
