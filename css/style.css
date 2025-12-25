@@ -132,7 +132,7 @@ button:focus {
 
 
 
-@media(max-width: 991px) {
+@media(max-width: 768px) {
   .menu {
     padding-top: 10px;
   }
@@ -395,7 +395,6 @@ background: linear-gradient(155deg, rgba(41, 38, 35, 1) 0%, rgba(48, 44, 40, 1) 
   height: auto;
   object-fit: cover;
   border-radius: 20px;
-  margin-left: 10px;
   box-shadow: 5px 10px 35px #e4e2e298;
 }
 
@@ -447,6 +446,26 @@ background: linear-gradient(155deg, rgba(41, 38, 35, 1) 0%, rgba(48, 44, 40, 1) 
 .badge-bottom small{
    font-family: "Roboto", sans-serif;
    color: var(--vlight-dark-color);
+}
+
+@media (max-width: 768px) {
+  .why-choose-us{
+    text-align: center;
+  }
+  .badge-top {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+  }
+  .badge-bottom {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
 }
 /* filter: drop-shadow(10px 15px 15px gray); */
 /* why choose us End */
@@ -729,6 +748,84 @@ background: linear-gradient(155deg, rgba(41, 38, 35, 1) 0%, rgba(48, 44, 40, 1) 
 }
 /* footer  */
 .footer {
-  background-color: #1F1818;
+  background-color: #292622;
   color: #fff;
+  padding: 45px 0;
+}
+.footer .footer-item{
+  padding: 5px;
+}
+.footer .footer-item h2{
+  color: var(--main-color);
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.footer .footer-item p{
+  font-size: 15px;
+  color: var(--vlight-dark-color);
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.footer .footer-item .golden-icon{
+  margin-right: 10px;
+  background-color: #332f2b;
+
+}
+.footer .footer-item h3{
+  color: #fff;
+  font-family: 'Cinzel', serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.footer .footer-item ul{
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-item ul li{
+  margin-bottom: 10px;
+}
+.footer .footer-item ul li i{
+  color: var(--fourth-color);
+  font-size: 14px;
+  margin-right: 10px;
+}
+.footer .footer-item ul li a{
+  color: var(--vlight-dark-color);
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+.footer .footer-item ul li a:hover{
+  color: var(--fourth-color);
+  transform: scale(1.03);
+}
+.footer hr{
+  color: #3a3631;
+}
+.footer .copy-right p{
+  color: rgb(139, 139, 139);
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+.footer .copy-right a{
+  color: var(--vlight-dark-color);
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  transition: all 0.3s linear;
+  margin-left: 70px;
+}
+.footer .copy-right a:hover{
+  color: var(--fourth-color);
+  transform: scale(1.03);
 }
