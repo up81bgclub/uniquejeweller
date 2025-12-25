@@ -16,6 +16,7 @@
 body {
   font-family: 'Lora', serif;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 .golden{
   color: var(--fourth-color);
@@ -200,7 +201,13 @@ button:focus {
   background-color: var(--vlight-dark-color);
   display: inline-block;
 }
-
+.hero-content .bis{
+  margin-top: 20px;
+  padding: 0;
+}
+.hero-content .bis p{
+  font-size: 14px;
+}
 .hero-content p .icon {
   padding: 13px;
   margin-left: 8px;
@@ -245,6 +252,12 @@ button:focus {
 
   .btn-outline-golden {
     padding: 8px 20px;
+  }
+  .hero-content p .icon {
+    margin-left: 3px;
+  }
+  .hero-content .bis p{
+    margin-top: 30px;
   }
 
 }
