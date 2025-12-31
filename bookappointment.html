@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique Jeweller</title>
+  <!-- bootstrap css  -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- Font Awesome CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custome CSS  -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Google Font  -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:wght@400;500&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Navbar  -->
+  <nav class="navbar navbar-expand-lg fixed-top menu">
+    <div class="container">
+      <!-- logo -->
+      <a class="navbar-brand logo" href="index.html">Unique Jeweller</a>
+      <!-- toggle button -->
+      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- sidebar  -->
+      <div class="offcanvas sidebar offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <!-- sidebar header  -->
+        <div class="offcanvas-header text-dark border-bottom">
+          <h5 class="offcanvas-title logo" id="offcanvasNavbarLabel">Unique Jeweller</h5>
+          <button type="button" class="btn-close golden" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!-- sidebar body  -->
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="https://www.uniquejeweller.in">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#aboutus">About US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="collections.html">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#help">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-lg-center justify-content-lg-center">
+            <a href="tel:+919412545883" class="golden-icon d-flex justify-content-center align-items-center" type="submit">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="https://wa.me/+919412545883?text=Hello%20Unique%20Jeweller,%20I%20want%20to%20enquire%20about%20jewellery" class="ms-3 golden-icon d-flex justify-content-center align-items-center" type="submit" style="font-size: 22px;">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="bookappointment.html" class="btn btn-golden mx-3 py-2 w-100">Book a Visit!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+<!-- bookappointment Heading -->
+<section class="appointment-head">
+    <div class="container">
+        <h1>Book Appointment</h1>
+        <p>Experience our exquisite collection in person. Book an appointment for a personalized<br> consultation with our jewellery experts.</p>
+        <span class="golden-light-line"></span>
+    </div>
+</section>
+<!-- bookappointment Heading End -->
+ <!-- Appointment Form -->
+ <section class="appointment-form py-5">
+    <div class="container">
+      <h2 class="text-center">Schedule Your Visit</h2>
+      <p class="text-center my-3">Fill in your details and we'll confirm your appointment via WhatsApp</p>
+        <div class="d-flex justify-content-center align-items-center">
+                <form>
+                  <span id="alert"></span>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="" class="form-label">Full Name *</label>
+                      <input id="fullname" type="text" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="" class="form-label">Phone Number *</label>
+                      <input id="phonenumber" type="text" class="form-control">
+                    </div>
+                  </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Purpose of Visit *</label>
+                      <select id="purposeofvisit" class="form-control" name="" id="">
+                        <option value="" selected> Select Purpose</option>
+                        <option value="Gold Jewellery"> Gold Jewellery</option>
+                        <option value="Diamond Jewellery">Diamond Jewellery</option>
+                        <option value="Silver Jewellery">Silver Jewellery</option>
+                        <option value="Custom Design">Custom Design</option>
+                        <option value="Gold Exchange">Gold Exchange</option>
+                        <option value="General Visit">General Visit</option>
+                      </select>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-6">
+                      <label for="" class="form-label">Preferred Date</label>
+                      <input id="date" type="date" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="" class="form-label">Preferred Time</label>
+                      <select id="time" class="form-control" name="" id="">
+                        <option value="" selected> Select Time</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="01:00 PM">01:00 PM</option>
+                        <option value="02:00 PM">02:00 PM</option>
+                        <option value="03:00 PM">03:00 PM</option>
+                        <option value="04:00 PM">04:00 PM</option>
+                        <option value="07:00 PM">07:00 PM</option>
+                      </select>
+                    </div>
+                  </div>
+                  <p><strong>Note:</strong> We do not sell online. All purchases are made in-store only. This form helps us prepare for your visit and ensure a personalized experience.</p>
+                    <button id="submit" type="submit" class="btn btn-dark-golden w-100">Book Appointment</button>
+                  </form>
+        </div>
+    </div>
+</section>
+ <!-- Appointment Form End -->
+<!-- footer  -->
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h2>Unique Jeweller</h2>
+            <p>Premium Gold & Diamond Jewellery in Aligarh. Crafting timeless elegance since 2003.</p>
+            <div class="d-flex align-item center">
+              <a href="#" class="golden-icon d-flex justify-content-center align-items-center"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="golden-icon d-flex justify-content-center align-items-center"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="golden-icon d-flex justify-content-center align-items-center"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="golden-icon d-flex justify-content-center align-items-center"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h3>Collections</h3>
+            <ul>
+              <li><a href="#">Bridal Jewellery</a></li>
+              <li><a href="#">Deily Wear</a></li>
+              <li><a href="#">Diamond Jewellery</a></li>
+              <li><a href="#">Custome Jewellery</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fa-solid fa-phone"></i><a href="#">+91 9412545883</a></li>
+              <li><i class="fa-solid fa-envelope"></i><a href="#">WhatsApp Us</a></li>
+              <li><a href="#">Amir Nishan, <br>Aligarh, UP 202001</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="copy-right d-md-flex justify-content-between">
+        <p class="text-center">© 2025 Unique Jeweller --- All rights reserved.</p>
+        <div class="d-md-flex justify-content-center">
+          <a href="#" class="mx-md-3">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer end -->
+
+
+  <script src="./js/bootstrap.min.js"></script>
+  <script>
+    let fullName = document.getElementById("fullname");
+    let phoneNumber = document.getElementById("phonenumber");
+    let purposeofVisit = document.getElementById("purposeofvisit");
+    let appointmentDate = document.getElementById("date");
+    let appointmentTime = document.getElementById("time");
+    let alert = document.getElementById("alert");
+
+    document.getElementById("submit").addEventListener("click", function (e) {
+      e.preventDefault();
+      if (!fullName.value || !phoneNumber.value || !purposeofVisit.value) {
+        alert.innerText = "Please fill in all the required fields.";
+        return;
+      }
+      if (phoneNumber.value.length !== 10) {
+        alert.innerText = "Please enter a valid 10-digit phone number.";
+        return;
+      }
+      let formData = {
+        fullName: fullName.value,
+        phoneNumber: phoneNumber.value,
+        purposeofVisit: purposeofVisit.value,
+        appointmentDate: appointmentDate.value,
+        appointmentTime: appointmentTime.value,
+      };
+
+      const message = `Hello, I would like to book an appointment.\n\nName: ${formData.fullName}\nPhone: ${formData.phoneNumber}\nPurpose: ${formData.purposeofVisit}${formData.appointmentDate ? `\nPreferred Date: ${formData.appointmentDate}` : ""}${formData.appointmentTime ? `\nPreferred Time: ${formData.appointmentTime}` : ""}`;
+
+      window.open(`https://wa.me/919412545883?text=${encodeURIComponent(message)}`);
+
+      console.log(formData);
+    });
+  </script>
+</body>
+
+</html>

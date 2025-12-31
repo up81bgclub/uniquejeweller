@@ -8,7 +8,7 @@
   --fourth-color: #FDC745;
   --fifth-color: #D3D3D3;
   --sixth-color: #ffffff;
-  --light-dark-color: #434343;
+  --light-dark-color: #7d7266;
   --dark-color: #0A0A0A;
   --vlight-dark-color: #B0B0B0;
 }
@@ -19,7 +19,7 @@ body {
   box-sizing: border-box;
 }
 .golden{
-  color: var(--fourth-color);
+  color:#c7a350;
 }
 a,
 a:hover,
@@ -841,4 +841,209 @@ background: linear-gradient(155deg, rgba(41, 38, 35, 1) 0%, rgba(48, 44, 40, 1) 
 .footer .copy-right a:hover{
   color: var(--fourth-color);
   transform: scale(1.03);
+}
+
+
+/* Book Appointment */
+.appointment-head{
+  padding: 80px 0;
+  background-color: #f8f7f7;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 100px;
+}
+.appointment-head h1{
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-family: "Crimson Text", serif;
+}
+.appointment-head p{
+  font-size: 16px;
+  color: var(--light-dark-color);
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Book Appointment Form  */
+#alert{
+  color: #a80505;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+.appointment-form{
+  padding: 80px 0;
+  background-color: #f2efe6;
+  overflow: hidden;
+}
+
+.appointment-form p{
+  font-size: 16px;
+  color: var(--light-dark-color);
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.appointment-form form{
+  width: 47%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #ffffff;
+
+}
+
+.appointment-form form label{
+  font-size: 14px;
+  color: var(--light-dark-color);
+  font-family: "Roboto", sans-serif;
+}
+
+.appointment-form form input{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 13px;
+  font-size: 14px;
+  color: var(--light-dark-color);
+  font-family: "Roboto", sans-serif;
+}
+
+.appointment-form form select{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 13px;
+  font-size: 14px;
+  color: var(--light-dark-color);
+  font-family: "Roboto", sans-serif;
+}
+
+select option:hover {
+  background-color: #d4af37;
+  color: white;
+}
+
+.appointment-form form p{
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: var(--vlight-dark-color);
+  font-family: "Roboto", sans-serif;
+}
+.appointment-form form p strong{
+  color: #000;
+  font-weight: 500;
+}
+/* collections  */
+.collection-head{
+  margin-top: 78px;
+  text-align: center;
+}
+.collection-head h1{
+  font-size: 4.5rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-family: "Crimson Text", serif;
+}
+.collection-head p{
+  font-size: 16px;
+  color: var(--light-dark-color);
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.collection1{
+  padding: 150px 0;
+  background-color: #f8f7f7;
+  overflow: hidden;
+}
+.collection2{
+  padding: 150px 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.collection3{
+  padding: 150px 0;
+  background-color: #f8f7f7;
+  overflow: hidden;
+}
+.collection4{
+  padding: 150px 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.collection .head{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.collection .head h2{
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-family: "Crimson Text", serif;
+}
+.collection .head p{
+  font-size: 16px;
+  color: var(--light-dark-color);
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.collection .collection-image{
+  padding: 10px;
+}
+.collection .collection-image img{
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 5px 10px 35px #e4e2e298;
+}
+
+.collection .collection-item{
+  padding: 30px 10px;
+}
+.collection .collection-item p{
+  font-size: 14px;
+  color: var(--vlight-dark-color);
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align:center;
+}
+.collection .collection-item h4{
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-family: "Crimson Text", serif;
+}
+.collection .collection-item .collection-box{
+  padding: 2px 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 5px 10px 35px #e4e2e298;
+  margin: 10px 5px;
+}
+.collection .collection-item .collection-box h3{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-family: "Crimson Text", serif;
+}
+.collection .collection-item .collection-box h4 small{
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  color: var(--light-dark-color);
 }

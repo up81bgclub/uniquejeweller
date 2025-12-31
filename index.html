@@ -30,7 +30,7 @@
   <nav class="navbar navbar-expand-lg fixed-top menu">
     <div class="container">
       <!-- logo -->
-      <a class="navbar-brand logo" href="#">Unique Jeweller</a>
+      <a class="navbar-brand logo" href="index.html">Unique Jeweller</a>
       <!-- toggle button -->
       <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -73,6 +73,7 @@
             <a href="https://wa.me/+919412545883?text=Hello%20Unique%20Jeweller,%20I%20want%20to%20enquire%20about%20jewellery" class="ms-3 golden-icon d-flex justify-content-center align-items-center" type="submit" style="font-size: 22px;">
               <i class="fa-brands fa-whatsapp"></i>
             </a>
+            <a href="bookappointment.html" class="btn btn-golden mx-3 py-2 w-100">Book a Visit!</a>
           </div>
         </div>
       </div>
@@ -157,7 +158,7 @@
             <div class="card-img-overlay">
               <h5 class="card-title">Bridal Jewellery</h5>
               <p class="card-text">Exquisite bridal jewellery crafted for royal weddings and timeless traditions.</p>
-              <a href="#" class="btn btn-dark-golden">View More</a>
+              <a href="collections.html" class="btn btn-dark-golden">View More</a>
             </div>
           </div>
 
@@ -170,7 +171,7 @@
               <h5 class="card-title">Daily Wear</h5>
               <p class="card-text">Lightweight daily wear jewellery designed for comfort, beauty, and everyday elegance.
               </p>
-              <a href="#" class="btn btn-dark-golden">View More</a>
+              <a href="collections.html" class="btn btn-dark-golden">View More</a>
             </div>
           </div>
         </div>
@@ -183,7 +184,7 @@
               <h5 class="card-title">Diamond Jewellery</h5>
               <p class="card-text">Premium diamond jewellery sparkling with luxury, brilliance, elegance, and modern
                 craftsmanship.</p>
-              <a href="#" class="btn btn-dark-golden">View More</a>
+              <a href="collections.html" class="btn btn-dark-golden">View More</a>
             </div>
           </div>
         </div>
@@ -194,7 +195,7 @@
             <div class="card-img-overlay">
               <h5 class="card-title">Custom Design</h5>
               <p class="card-text">Custom design jewellery crafted uniquely to match your style, story, vision.</p>
-              <a href="#" class="btn btn-dark-golden">View More</a>
+              <a href="collections.html" class="btn btn-dark-golden">View More</a>
             </div>
           </div>
         </div>
@@ -462,7 +463,7 @@
                 <small>Quick response guaranteed</small>
               </div>
             </a>
-            <a href="#" class="btn btn-golden py-3 w-100">Book a Visit!</a>
+            <a href="bookappointment.html" class="btn btn-golden py-3 w-100">Book a Visit!</a>
           </div>
         </div>
 
@@ -558,10 +559,10 @@
           <div class="footer-item">
             <h3>Collections</h3>
             <ul>
-              <li><a href="#">Bridal Jewellery</a></li>
-              <li><a href="#">Deily Wear</a></li>
-              <li><a href="#">Diamond Jewellery</a></li>
-              <li><a href="#">Custome Jewellery</a></li>
+              <li><a href="collections.html">Bridal Jewellery</a></li>
+              <li><a href="collections.html">Deily Wear</a></li>
+              <li><a href="collections.html">Diamond Jewellery</a></li>
+              <li><a href="collections.html">Custome Jewellery</a></li>
             </ul>
           </div>
         </div>
@@ -592,6 +593,12 @@
 
 
   <script src="./js/bootstrap.min.js"></script>
+    <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
 </body>
 
 </html>
