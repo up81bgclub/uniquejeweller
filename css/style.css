@@ -899,6 +899,11 @@ background: linear-gradient(155deg, rgba(41, 38, 35, 1) 0%, rgba(48, 44, 40, 1) 
   background-color: #ffffff;
 
 }
+@media(max-width: 768px) {
+.appointment-form form{
+    width: 100%;
+  }
+}
 
 @media(max-width: 768px) {
   .appointment-form form{
