@@ -12,6 +12,9 @@
   --dark-color: #0A0A0A;
   --vlight-dark-color: #B0B0B0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Lora', serif;
@@ -895,6 +898,12 @@ background: linear-gradient(155deg, rgba(41, 38, 35, 1) 0%, rgba(48, 44, 40, 1) 
   border-radius: 10px;
   background-color: #ffffff;
 
+}
+
+@media(max-width: 768px) {
+  .appointment-form form{
+    width: 100%;
+  }
 }
 
 .appointment-form form label{
