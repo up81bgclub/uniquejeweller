@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique Jeweller</title>
+  <!-- bootstrap css  -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- Font Awesome CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custome CSS  -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Google Font  -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:wght@400;500&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Navbar  -->
+  <nav class="navbar navbar-expand-lg fixed-top menu">
+    <div class="container">
+      <!-- logo -->
+      <a class="navbar-brand logo" href="index.html">Unique Jeweller</a>
+      <!-- toggle button -->
+      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- sidebar  -->
+      <div class="offcanvas sidebar offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <!-- sidebar header  -->
+        <div class="offcanvas-header text-dark border-bottom">
+          <h5 class="offcanvas-title logo" id="offcanvasNavbarLabel">Unique Jeweller</h5>
+          <button type="button" class="btn-close golden" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!-- sidebar body  -->
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="https://www.uniquejeweller.in">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#aboutus">About US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="collections.html">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#help">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-lg-center justify-content-lg-center">
+            <a href="tel:+919412545883" class="golden-icon d-flex justify-content-center align-items-center"
+              type="submit">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="https://wa.me/+919412545883?text=Hello%20Unique%20Jeweller,%20I%20want%20to%20enquire%20about%20jewellery"
+              class="ms-3 golden-icon d-flex justify-content-center align-items-center" type="submit"
+              style="font-size: 22px;">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+          <div class="d-flex align-items-lg-center justify-content-lg-center my-md-1 my-4">
+            <a href="bookappointment.html" class="btn btn-golden mx-3 py-2">Book a Visit!</a>
+          </div>
+        </div>
+      </div>
+  </nav>
+  <!-- Navbar End -->
+  <!-- About Hero Section  -->
+  <section class="about-hero">
+    <div class="container about-container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="about-hero-content">
+            <p class="text-uppercase est"><span class="line"></span>Est. 2003. Aligarh</p>
+            <h1 class="display-4 mb-4 golden">
+              Crafting Trust in <br><span class="golden">Gold</span> Since 2003
+            </h1>
+
+            <p class="lead mb-4">
+              For over two decades, we have been weaving trust, purity, and exquisite craftsmanship into every piece of
+              jewellery we create. Your celebrations deserve nothing less than perfection.
+            </p>
+
+            <a href="https://www.google.com/maps/dir//Amir+Nishan,+Aligarh,+Uttar+Pradesh+202001/@30.3303503,78.0081109,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3974a5ba114ba531:0xa2ebaacaaf89fecf!2m2!1d78.0837844!2d27.9034985?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+              class="btn btn-golden me-3">Visit Our Showroom</a>
+            <a href="./bookappointment.html" class="btn btn-outline-golden">Book a Consultation</a>
+            <div class="bis">
+              <p><span>22+</span><br>Years of Trust</p>
+              <p><span>100%</span><br>bis hallmarked huid</p>
+              <p><span>10K+</span><br>Happy Families</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section End  -->
+  <!-- about why choose us -->
+  <section class="about-why-choose-us" id="aboutus">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 ">
+          <div class="image-box position-relative">
+            <img src="./images/firm.png" alt="Firm Unique Jeweller image">
+            <div class="badge-top">
+              <h5 class="mb-0 fw-bold">2003</h5>
+              <small>Established</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="about-text">
+            <p class="text-uppercase text-right golden"><span></span>Our Story</p>
+            <h2 class="">A Legacy of Trust,<br><span class="dark-golden">Built with Love</span></h2>
+            <div class="about-text-one">
+              <p>In the heart of Aligarh, a dream was born in 2003. What started as a small family-owned jewellery store
+                has blossomed into a name synonymous with trust, purity, and unmatched craftsmanship.</p>
+              <p>For over two decades, Unique Jeweller has been more than just a destination for fine jewellery — we
+                have become part of countless family celebrations, marking milestones with pieces that tell stories of
+                love, tradition, and togetherness.</p>
+              <p>Our journey has been guided by a simple philosophy: every customer is family, and every piece of
+                jewellery must be crafted with the same care and devotion we would put into a creation for our own loved
+                ones.</p>
+            </div>
+            <div class="about-text-two">
+              <h4>"Every piece tells a story of trust"</h4>
+              <p><span></span>The Unique Jeweller Family</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--about why choose us end -->
+
+  <!-- Our Philosophy Start -->
+  <section class="our-philosophy" id="reviews">
+    <div class="container">
+      <div class="our-philosophy-text text-center">
+        <p class="text-uppercase golden">Our Philosophy</p>
+        <h2 class="">What We<span class="dark-golden mx-2">Stand For</span></h2>
+        <span class="golden-light-line"></span>
+        <p class="para">At Unique Jeweller, we are driven by values that have been passed down through generations —
+          <br>values that define who we are and how we serve you.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="our-philosophy-item">
+            <span><i class="fa-solid fa-heart"></i></span>
+            <h4>Jewellery as Emotions</h4>
+            <p>Every piece we craft carries the weight of emotions — the joy of a new beginning, the warmth of
+              celebration, and the promise of forever. We understand that jewellery is never just an ornament; it is a
+              keeper of memories.</p>
+            <div class="b-line"></div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="our-philosophy-item">
+            <span><i class="fa-solid fa-eye"></i></span>
+            <h4>Transparency & Trust</h4>
+            <p>We believe in complete transparency in our pricing, our processes, and our products. What you see is what
+              you get — with proper billing, clear explanations, and honest guidance that puts your interests first.</p>
+            <div class="b-line"></div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="our-philosophy-item">
+            <span><i class="fa-regular fa-gem"></i></span>
+            <h4>Purity Above All</h4>
+            <p>Purity is not just a standard for us; it is a promise. Every gram of gold, every diamond we work with,
+              meets the highest standards of authenticity and quality. Your trust is our most precious asset.</p>
+            <div class="b-line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Our Philosophy End -->
+  <!-- craftsmanship start -->
+  <section class="craftsmanship">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6">
+          <div class="craftsmanship-text">
+            <p class="text-uppercase text-right dark-golden"><span class="line"></span>Craftsmanship</p>
+            <h2 class="">Where Art Meets<br><span class="dark-golden">Timeless Tradition</span></h2>
+            <p class="para">Behind every exquisite piece at Unique Jeweller lies the dedication of master artisans who
+              pour their hearts into their craft. Our craftsmen blend time-honoured techniques passed down through
+              generations with modern precision to create jewellery that is truly exceptional.</p>
+            <div class="craftsmanship-text-one">
+              <p><span><i class="fa-regular fa-circle-check"></i></span>Skilled artisans with decades of experience</p>
+              <p><span><i class="fa-regular fa-circle-check"></i></span>Traditional techniques preserved with precision
+              </p>
+              <p><span><i class="fa-regular fa-circle-check"></i></span>Modern technology for flawless finishing</p>
+              <p><span><i class="fa-regular fa-circle-check"></i></span>Rigorous multi-stage quality inspection</p>
+              <p><span><i class="fa-regular fa-circle-check"></i></span>Each piece individually crafted with care</p>
+            </div>
+            <div class="craftsmanship-text-two">
+              <p><span>50+</span><br>Master Artisans</p>
+              <p><span>22+</span><br>Years Experience</p>
+              <p><span>100%</span><br>Handcrafted</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="image-box position-relative">
+            <img src="./images/artisan-crafting.jpg" alt="Firm Unique Jeweller image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- craftsmanship end -->
+  <!-- Trust Start  -->
+  <section class="trust" id="reviews">
+    <div class="container">
+      <div class="trust-text text-center">
+        <p class="text-uppercase golden">Trust & Certification</p>
+        <h2 class="">Your Trust,<span class="dark-golden mx-2">Our Responsibility</span></h2>
+        <span class="golden-light-line"></span>
+        <p class="para">We uphold the highest standards of transparency and authenticity. Every piece comes with
+          <br>proper certification and documentation.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="trust-item">
+            <span><i class="fa-solid fa-shield"></i></span>
+            <h4>BIS Hallmarked HUID Gold</h4>
+            <p>100% BIS certified with HUID registration for complete authenticity and purity assurance.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="trust-item">
+            <span><i class="fa-regular fa-gem"></i></span>
+            <h4>Certified Diamonds</h4>
+            <p>Every diamond comes with certification from reputed gemological laboratories.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="trust-item">
+            <span><i class="fa-regular fa-file-lines"></i></span>
+            <h4>Transparent Billing</h4>
+            <p>Clear, itemized invoices with making charges, stone value, and gold rate clearly mentioned.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="trust-item">
+            <span><i class="fa-solid fa-medal"></i></span>
+            <h4>Quality Guaranteed</h4>
+            <p>Our quality promise ensures every piece meets the highest standards of excellence.</p>
+          </div>
+        </div>
+      </div>
+      <div class="iso">
+        <p><span><i class="fa-solid fa-shield"></i></span>ISO 9001:2015 Quality Management Standards</p>
+      </div>
+    </div>
+  </section>
+  <!-- Trust End  -->
+  <!-- Creations Start -->
+  <section class="creations">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6">
+          <div class="creations-text">
+            <p class="text-uppercase text-right dark-golden"><span class="line"></span>Custom Creations</p>
+            <h2 class="">Your Dream,<br><span class="dark-golden">Our Creation</span></h2>
+            <div class="creations-text-one">
+              <p>At Unique Jeweller, we believe that the most precious jewellery is one that reflects your unique story.
+                Our custom design service takes you on a journey from imagination to reality — creating pieces that are
+                truly one of a kind.</p>
+              <p>Whether it is a bespoke bridal set that captures your heritage, a personalised gift for someone
+                special, or an heirloom piece to pass down through generations — our master craftsmen are ready to bring
+                your vision to life.</p>
+            </div>
+          </div>
+          <a href="" class="btn btn-golden">Book a Design Consultation</a>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="creations-box-item">
+                <span><i></i></span>
+                <h4>Personalized Designs</h4>
+                <p>Share your vision and we bring it to life</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="creations-box-item">
+                <span><i></i></span>
+                <h4>Expert Consultation</h4>
+                <p>One-on-one guidance from our design experts</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="creations-box-item">
+                <span><i></i></span>
+                <h4>Bridal Collections</h4>
+                <p>Custom pieces for your special day</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="creations-box-item">
+                <span><i></i></span>
+                <h4>Daily Wear</h4>
+                <p>Elegant pieces for everyday moments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="creations-process">
+        <h2 class="">From Idea to<span class="dark-golden">Handcrafted Jewellery</span></h2>
+        <div class="process-bar">
+          <div class="process-item">
+            <span>01</span>
+            <p>Consultation <br><small>Share your vision</small></p>
+          </div>
+          <div class="process-item">
+            <span>02</span>
+            <p>Design<br><small>We create sketches</small></p>
+          </div>
+          <div class="process-item">
+            <span>03</span>
+            <p>Crafting<br><small>Master artisans at work</small></p>
+          </div>
+          <div class="process-item">
+            <span>04</span>
+            <p>Delivery<br><small>Your masterpiece</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Creations End -->
+
+  <!-- Customer care Start -->
+  <section class="customer-care">
+    <div class="container">
+      <div class="customer-care-text text-center">
+        <p class="text-uppercase golden">Customer Care</p>
+        <h2 class="">Beyond the<span class="dark-golden mx-2">Purchase</span></h2>
+        <span class="golden-light-line"></span>
+        <p class="para">At Unique Jeweller, our commitment to you extends far beyond the moment of purchase. We are<br>
+          dedicated to ensuring your complete satisfaction, today and always.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="customer-care-item">
+            <span><i></i></span>
+            <div>
+              <h4>Easy Exchange & Buyback</h4>
+              <p>Flexible exchange policies and fair buyback rates on all our jewellery. Your investment is always protected.</p>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-6">
+          <div class="customer-care-item">
+            <span><i></i></span>
+            <div>
+              <h4>Repair & Polishing</h4>
+              <p>Expert repair services and professional polishing to keep your precious pieces looking as beautiful as new.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="customer-care-item">
+            <span><i></i></span>
+            <div>
+              <h4>Lifetime Support</h4>
+              <p>Our relationship does not end at purchase. We are here to assist you with any questions or needs, always.</p>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-6">
+          <div class="customer-care-item">
+            <span><i></i></span>
+            <div>
+              <h4>Care & Maintenance</h4>
+              <p>Cleaning and inspection services to ensure your jewellery remains in perfect condition for generations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="customer-care-box">
+        <h2>Have Questions? We are Here to Help</h2>
+        <p>Our customer care team is available to assist you with any queries. Reach out to <br>us and experience the Unique Jeweller difference.</p>
+        <p><span></span>+91 99999 99999 | care@uniquejeweller.com</p>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Customer care End -->
+
+  <!-- Legacy Start -->
+  <section class="legacy">
+    <div class="container">
+      <div class="customer-care-text text-center">
+        <p class="text-uppercase golden">Community & Legacy</p>
+        <h2 class="">Part of Your<span class="dark-golden mx-2">Story</span></h2>
+        <span class="golden-light-line"></span>
+        <p class="para">For over two decades, we have had the honour of being part of Aligarh's most cherished <br>celebrations — weddings, festivals, and milestones that mark the beautiful journey of life.</p>
+      </div>
+      <div class="legacy-number">
+        <h4>10,000+<br><small>Happy Families</small></h4>
+        <h4>5,000+<br><small>Wedding Collections</small></h4>
+        <h4>22+<br><small>Years of Service</small></h4>
+        <h4>3<br><small>Generations Trust</small></h4>
+      </div>
+    </div>
+  </section>
+  <!-- Legacy End -->
+   <!-- Experience Start -->
+    <section class="experience">
+    <div class="container">
+      <div class="experience-text text-center">
+        <p class="text-uppercase golden">Experience</p>
+        <h2 class="">Experience<span class="dark-golden mx-2">Purity, Craftsmanship</span><br>and Trust at Unique Jeweller</h2>
+        <span class="golden-light-line"></span>
+        <p class="para">Visit our showroom in Aligarh and discover the difference that 22 years of dedication to excellence makes. Your perfect piece awaits.</p>
+      </div>
+      <div class="experience-btn">
+        <a href="bookappointment.html" class="btn btn-golden mx-3 py-2">Visit Showroom</a>
+        <a href="bookappointment.html" class="btn btn-golden-outline mx-3 py-2">Contact US</a>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="experiance-item">
+            <span></span>
+            <h4>Our Location</h4>
+            <p>Main Market, Near Clock Tower
+Aligarh, Uttar Pradesh 202001</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="experiance-item">
+            <span></span>
+            <h4>Store Hours</h4>
+            <p>Mon - Sat: 10:00 AM - 8:00 PM
+Sunday: 11:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="experiance-item">
+            <span></span>
+            <h4>Get in Touch</h4>
+            <p>+91 99999 99999
+info@uniquejeweller.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <!-- Experience End -->
+
+  <!-- footer  -->
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h2>Unique Jeweller</h2>
+            <p>Premium Gold & Diamond Jewellery in Aligarh. Crafting timeless elegance since 2003.</p>
+            <div class="d-flex align-item center">
+              <a href="https://www.youtube.com/@uniquejeweller"
+                class="golden-icon d-flex justify-content-center align-items-center"><i
+                  class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.instagram.com/uniquejewellerofficial/"
+                class="golden-icon d-flex justify-content-center align-items-center"><i
+                  class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h3>Collections</h3>
+            <ul>
+              <li><a href="collections.html">Bridal Jewellery</a></li>
+              <li><a href="collections.html">Deily Wear</a></li>
+              <li><a href="collections.html">Diamond Jewellery</a></li>
+              <li><a href="collections.html">Custome Jewellery</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fa-solid fa-phone"></i><a href="#">+91 9412545883</a></li>
+              <li><i class="fa-solid fa-envelope"></i><a href="#">WhatsApp Us</a></li>
+              <li><a href="#">Amir Nishan, <br>Aligarh, UP 202001</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="copy-right d-md-flex justify-content-between">
+        <p class="text-center">© 2025 Unique Jeweller --- All rights reserved.</p>
+        <div class="d-md-flex justify-content-center">
+          <a href="#" class="mx-md-3">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer end -->
+
+
+  <script src="./js/bootstrap.min.js"></script>
+  <script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse.classList.contains('show')) {
+          new bootstrap.Collapse(navbarCollapse).toggle();
+        }
+      });
+    });
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+</body>
+
+</html>

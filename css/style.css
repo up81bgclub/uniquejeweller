@@ -1,16 +1,20 @@
 /* ===================== */
 /* COMMOM CSS */
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 :root {
   --main-color: #d4af37;
   --secondary-color: #FAF7F2;
   --third-color: #FAF7F2;
   --fourth-color: #FDC745;
+  --fourth-dark-color: #d19e1d;
   --fifth-color: #D3D3D3;
   --sixth-color: #ffffff;
   --light-dark-color: #7d7266;
   --dark-color: #0A0A0A;
   --vlight-dark-color: #B0B0B0;
+    /* Fonts */
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'DM Sans', system-ui, sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -23,6 +27,9 @@ body {
 }
 .golden{
   color:#c7a350;
+}
+.dark-golden{
+  color: var(--fourth-dark-color);
 }
 a,
 a:hover,
@@ -42,6 +49,14 @@ p {
   border: 0;
   background-color: #FFF7E6;
   color: var(--fourth-color);
+}
+.line {
+  width: 40px;
+  height: 2px;
+  position: relative;
+  bottom: 6px;
+  background-color: var(--vlight-dark-color);
+  display: inline-block;
 }
 
 .btn:focus,
@@ -1060,4 +1075,417 @@ select option:hover {
   font-size: 12px;
   font-family: "Roboto", sans-serif;
   color: var(--light-dark-color);
+}
+
+/* About section start */
+
+/* hero section  */
+.about-hero {
+  margin-top: 78px;
+  /* fixed navbar space */
+  background-image: url("../images/hero-jewellery.jpg");
+  background-size: cover;
+  background-position: center right;
+  /* model right side */
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Gradient overlay */
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(255, 255, 255, 0.85) 25%,
+    rgba(255, 255, 255, 0.90) 40%,
+    rgba(255, 255, 255, 0.45) 55%,
+    rgba(255, 255, 255, 0.1) 85%
+  );
+  z-index:1;
+}
+.about-container{
+  position: relative;
+  z-index: 2;
+}
+.about-hero-content {
+  position: relative;
+  padding-right: 15px;
+  
+}
+.about-hero-content .est{
+  font-family: var(--font-sans);
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: var(--fourth-dark-color);
+}
+.about-hero-content .line{
+  width: 50px;
+  height: 1px;
+  position: relative;
+  bottom: 6px;
+  background-color: var(--fourth-dark-color);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.about-hero-content h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-style: normal;
+  padding: 5px 0;
+}
+
+.about-hero-content h1 span {
+  color: var(--fourth-dark-color);
+}
+
+.about-hero-content p {
+  font-size: 20px;
+  color:#61584f;
+  font-weight: 400;
+}
+.about-hero-content .btn{
+  font-size: 20px;
+  font-family: var(--font-sans);
+}
+.about-hero-content .btn-golden {
+  background: linear-gradient(135deg, #d19e1d, #e6c36a);
+  color: #fff;
+  padding: 12px 28px; 
+  border-radius: 10px;
+  border: none;
+}
+
+.about-hero-content .btn-golden:hover {
+  background: linear-gradient(135deg, #b8923e, #d4b25f);
+  color: #fff;
+}
+
+.about-hero-content .btn-outline-golden {
+  border: 2px solid #d19e1d;
+  color: var(--fourth-dark-color);
+  padding: 10px 28px;
+  border-radius: 10px;
+}
+
+.about-hero-content .btn-outline-golden:hover {
+  background: #c9a24d;
+  color: #fff;
+}
+.about-hero-content .bis{
+  border-top: 0.3px solid var(--fourth-dark-color);
+  margin-top: 35px;
+  padding: 25px 0;
+  display: flex;
+}
+.about-hero-content .bis p{
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 300;
+  color: #61584f;
+  margin-right: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.about-hero-content p span{
+  font-family: var(--font-serif);
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--fourth-dark-color);
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    margin-top: 0;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  }
+
+  .about-hero-content {
+    padding: 10px;
+    margin-top: 25px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 45px;
+  }
+
+  .about-hero-content p {
+    font-size: 16px;
+  }
+
+  .about-hero-content .btn {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .about-hero-content .bis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .about-hero-content .bis p{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+}
+
+/* about why choose us */
+.about-why-choose-us{
+  padding: 80px 0;
+}
+.about-why-choose-us .image-box::after{
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--fourth-color);
+  border-radius: 10px;
+  background: transparent;
+  z-index: -1;
+}
+.about-why-choose-us .badge-top {
+  background-color: var(--fourth-dark-color);
+  top: -25px;
+  right: 550px;
+  font-family: var(--font-serif);
+  color: #ffffff;
+}
+.about-why-choose-us .badge-top small{
+   color: #ffffff;
+   font-family: var(--font-serif);
+}
+.about-why-choose-us .about-text{
+  padding: 25px 10px;
+  margin-left: 15px;
+}
+.about-why-choose-us .about-text p{}
+
+.about-why-choose-us .about-text p span{
+  width: 40px;
+  height: 1px;
+  position: relative;
+  bottom: 6px;
+  background-color: var(--fourth-dark-color);
+  display: inline-block;
+  margin-right: 5px;
+}
+.about-why-choose-us .about-text h2{
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: var(--font-serif);
+}
+.about-why-choose-us .about-text-one{
+  border-bottom: 1px solid var(--fourth-color);
+}
+.about-why-choose-us .about-text-one p{
+  font-family: var(--font-sans);
+  font-size: 16px;
+  color: var(--light-dark-color);
+  padding:5px 0;
+}
+.about-why-choose-us .about-text-two h4{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--fourth-dark-color);
+  font-family: var(--font-serif);
+}
+.about-why-choose-us .about-text-two p{
+  font-size: 14px;
+  color: var(--vlight-dark-color);
+}
+.about-why-choose-us .about-text-two p span{
+  width: 20px;
+  height: 1px;
+  position: relative;
+  bottom: 4px;
+  background-color: var(--vlight-dark-color);
+  display: inline-block;
+  margin-right: 2px;
+}
+
+
+
+/* our Philosophy */
+
+.our-philosophy{
+  padding: 80px 0px;
+  background-color: #f5eddf;
+}
+.our-philosophy .our-philosophy-text{
+  padding: 25px 10px;
+  margin-left: 15px;
+}
+.our-philosophy .our-philosophy-text p{
+  font-size: 16px;
+  color: var(--fourth-dark-color);
+  padding:5px 0;
+}
+.our-philosophy .our-philosophy-text h2{
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: var(--font-serif);
+}
+.our-philosophy .our-philosophy-text .para{
+  color: var(--light-dark-color);
+}
+.our-philosophy .our-philosophy-text p span{
+  width: 20px;
+  height: 1px;
+  position: relative;
+  bottom: 4px;
+  background-color: var(--vlight-dark-color);
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.our-philosophy .our-philosophy-item{
+  background-color: #ffffff;
+  padding: 25px 30px;
+  margin-left: 15px;
+  border-radius: 10px;
+  margin-top: 25px;
+  height: 320px;
+}
+.our-philosophy .our-philosophy-item span{
+  width: 60px;
+  height:60px;
+  border-radius: 50%;
+  background-color: #FFF7E6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: var(--fourth-color);
+}
+.our-philosophy .our-philosophy-item h4{
+  color: var(--dark-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: var(--font-serif);
+}
+.our-philosophy .our-philosophy-item p{
+  font-family: var(--font-sans);
+  font-size: 15px;
+  color: var(--light-dark-color);
+}
+.our-philosophy .our-philosophy-item .b-line{
+  width: 0%;
+  height: 2px;
+  background-color: var(--fourth-dark-color);
+  margin: 15px 0;
+  transition: width 0.5s ease-in-out;
+}
+.our-philosophy .our-philosophy-item:hover span{
+  background-color: var(--fourth-dark-color);
+  color: #ffffff;
+}
+.our-philosophy .our-philosophy-item:hover h4{
+  color: var(--fourth-dark-color);
+}
+.our-philosophy .our-philosophy-item:hover .b-line{
+  width: 100%;
+}
+
+/* craftsmanship */
+.craftsmanship{
+  padding: 80px 0px;
+}
+.craftsmanship .craftsmanship-text{
+  padding: 25px 10px;
+  margin-left: 15px;
+}
+.craftsmanship .craftsmanship-text p{
+  font-size: 16px;
+  color: var(--fourth-dark-color);
+  padding:5px 0;
+  font-family: var(--font-sans);
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+.craftsmanship .craftsmanship-text p .line{
+  width: 30px;
+  height: 1px;
+  position: relative;
+  bottom: 4px;
+  background-color: var(--fourth-dark-color);
+  display: inline-block;
+  margin-right: 8px;
+}
+.craftsmanship .craftsmanship-text h2{
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: var(--font-serif);
+  padding: 10px 0;
+}
+.craftsmanship .craftsmanship-text .para{
+  color: var(--light-dark-color);
+  letter-spacing: 0px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.craftsmanship .craftsmanship-text-one P{
+  font-size: 16px;
+  color: var(--light-dark-color);
+  font-family: var(--font-sans);
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding: 0;
+}
+.craftsmanship .craftsmanship-text-one P span{
+  color: var(--fourth-dark-color);
+  font-weight: 500;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.craftsmanship .craftsmanship-text-two {
+  border-top: 0.2px solid var(--fourth-dark-color);
+  margin-top: 35px;
+  padding: 25px 0;
+  display: flex;
+}
+.craftsmanship .craftsmanship-text-two p{
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 300;
+  color: #61584f;
+  margin-right: 70px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.craftsmanship .craftsmanship-text-two p span{
+  font-family: var(--font-serif);
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--fourth-dark-color);
+}
+
+.craftsmanship .image-box::after{
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--fourth-color);
+  border-radius: 10px;
+  background: transparent;
+  z-index: -1;
 }
