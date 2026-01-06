@@ -166,6 +166,9 @@ button:focus {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
+  .menu .bookavisit{
+    width: 100%;
+  }
 }
 
 /* hero section  */
@@ -1946,6 +1949,7 @@ select option:hover {
   display: flex;
   align-items: center;
   justify-content:space-between;
+  overflow: hidden;
 }
 .legacy .legacy-number h4{
   font-size:3.2rem;
@@ -1965,7 +1969,20 @@ select option:hover {
 }
 
 @media (max-width: 768px) {
+  .legacy .legacy-number{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
 
+  .legacy .legacy-number h4{
+    font-size: 3.5rem;
+  }
+
+  .legacy .legacy-number small{
+    font-size: 18px;
+  }
 }
 
 /* experience */
@@ -2062,6 +2079,7 @@ background: linear-gradient(180deg, rgba(41, 37, 33, 1) 0%, rgba(41, 37, 33, 1) 
   flex-direction: column;
   align-items: center;
   justify-content:center;
+  color: #ffffff;
 }
 
 .experience .experiance-item span{
@@ -2072,16 +2090,18 @@ background: linear-gradient(180deg, rgba(41, 37, 33, 1) 0%, rgba(41, 37, 33, 1) 
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:#ffffff;
+  background-color: #423b2f;
   font-size: 20px;
-  margin-right: 25px;
 }
 .experience .experiance-item h4{
   font-size:1.5rem;
   font-weight: 400;
   font-family: var(--font-serif);
-  color: var(--fourth-dark-color);
   padding: 0;
   line-height: 35px;
   text-align: center;
+}
+.experience .experiance-item p{
+  font-size: 14px;
+  color: var(--vlight-dark-color);
 }
